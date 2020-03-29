@@ -1,6 +1,8 @@
 package com.tyss.capgemini.primitivedatatypesandvariables;
 
 public class PrimitiveData {
+	// These are the instance variables as these variables are declared within the
+	// class, but outside the method.
 	byte b1;
 	short s1;
 	int i1;
@@ -9,7 +11,6 @@ public class PrimitiveData {
 	double d1;
 	char c1;
 	boolean istrue1;
-	
 
 	public static void main(String[] args) // throws IOException
 	{
@@ -30,9 +31,15 @@ public class PrimitiveData {
 
 		// System.err.print("This is a message\n"); ---> We can also use this statement
 		// to print the message, but it will be printed in red
+
+		try {
+			System.console().writer().println("Hello"); //----> You will get a run time exception
+		} catch (Exception e) {
+			System.out.println("Exception has occured using this method, But handled it.");
+		}
 		
-		//System.console().writer().println("Hello"); ----> You will get a run time exception
 		
+
 		System.out.println(b);
 		System.out.println(s);
 		System.out.println(i);
@@ -44,11 +51,10 @@ public class PrimitiveData {
 		PrimitiveData pd = new PrimitiveData();
 		pd.instview();
 		// To call a non static method, We have to create an instance of a class(object)
-		
+
 	}
-	
-	public  void instview()
-	{
+
+	public void instview() {
 		System.out.println(b1);
 		System.out.println(s1);
 		System.out.println(i1);

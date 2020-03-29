@@ -61,8 +61,11 @@ public class VariablesExample {
 		System.out.println(lIsTrue);
 		System.out.println(lString);
 
+		
 		VariablesExample v = new VariablesExample();
+		v.sGByte = 12;
 		v.disp();
+//		System.out.println(v.sGByte);
 
 	}
 

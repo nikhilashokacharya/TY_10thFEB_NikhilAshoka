@@ -16,6 +16,5 @@ public class CustomExceptionTester2 {
 			
 			// Another way to write Custom exception
 		}
-
 	}
 }
